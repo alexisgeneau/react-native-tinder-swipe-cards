@@ -325,7 +325,7 @@ export default class SwipeCards extends Component {
     ).start();
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.cards !== this.props.cards) {
 
       if (this.cardAnimation) {
